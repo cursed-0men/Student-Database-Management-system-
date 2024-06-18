@@ -5,7 +5,7 @@ student information and academic results.
 It allows users to perform various operations such as adding students, 
 recording results, displaying course catalog, and more. 
 The system interacts with a MySQL database to store and retrieve data.
-# Python code Documentation
+# Python code Documentation 📄
 1. Overview
 The Python code consists of functions to handle different functionalities of the Student Management System.
 It includes functions for displaying course catalogs, adding students, recording results, searching students,
@@ -49,7 +49,7 @@ It catches MySQL errors and provides appropriate error messages to the user.
   It simplifies the process of displaying data in tabular format by providing functions to 
   create tables with headers and align data neatly.
 
-# MySQL Query Documentation
+# MySQL Query Documentation 📄
 1. Overview
 The MySQL queries file contains SQL statements to create tables for storing student
 data, populate the tables with sample data and perform various database operations.
