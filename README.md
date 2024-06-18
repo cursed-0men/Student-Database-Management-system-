@@ -13,16 +13,16 @@ updating student information, and more. The application provides a menu-driven i
 
 2. Functions
 Here 'prn' means Permanent Registration Number
-2.1 display_courses(cursor)
-2.2 add_student(cursor)
-2.3 add_result(cursor)
-2.4 display_results_by_prn(cursor, prn)
-2.5 search_student_by_prn(cursor, prn)
-2.6 display_students_by_course(cursor, course_id)
-2.7 delete_student_by_prn(cursor, prn)
-2.8 update_student_info(cursor)
-2.9 display_all_students(cursor)
-2.10 delete_all_students(cursor)
+2.1 display_courses(cursor).
+2.2 add_student(cursor).
+2.3 add_result(cursor).
+2.4 display_results_by_prn(cursor, prn).
+2.5 search_student_by_prn(cursor, prn).
+2.6 display_students_by_course(cursor, course_id).
+2.7 delete_student_by_prn(cursor, prn).
+2.8 update_student_info(cursor).
+2.9 display_all_students(cursor).
+2.10 delete_all_students(cursor).
 
 4. Menu Function
 The menu() function provides a menu-driven interface for users to interact with the
