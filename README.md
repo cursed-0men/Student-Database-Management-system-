@@ -1,4 +1,4 @@
-# Student Database Management System
+# Student Database Management System 🧑‍🎓
 # Introduction
 The Student Management System is a Python-based application designed to manage 
 student information and academic results. 
