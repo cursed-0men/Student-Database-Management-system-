@@ -1,79 +1,156 @@
-# Student Database Management System 🧑‍🎓
-# Introduction
-The Student Management System is a Python-based application designed to manage 
-student information and academic results. 
-It allows users to perform various operations such as adding students, 
-recording results, displaying course catalog, and more. 
-The system interacts with a MySQL database to store and retrieve data.
-# Python code Documentation 📄
-1. Overview
-The Python code consists of functions to handle different functionalities of the Student Management System.
-It includes functions for displaying course catalogs, adding students, recording results, searching students,
-updating student information, and more. The application provides a menu-driven interface for user interaction.
+# 🎓 Student Database Management System
 
-2. Functions
-Here 'prn' means Permanent Registration Number
-2.1 display_courses(cursor).
-2.2 add_student(cursor).
-2.3 add_result(cursor).
-2.4 display_results_by_prn(cursor, prn).
-2.5 search_student_by_prn(cursor, prn).
-2.6 display_students_by_course(cursor, course_id).
-2.7 delete_student_by_prn(cursor, prn).
-2.8 update_student_info(cursor).
-2.9 display_all_students(cursor).
-2.10 delete_all_students(cursor).
+## 📌 Introduction
 
-4. Menu Function
-The menu() function provides a menu-driven interface for users to interact with the
-Student Management System. It presents various options to the user,
-allowing them to perform different operations on student data.
+The **Student Database Management System** is a Python-based application designed to manage student information and academic results.
 
-5. Integration with MySQL
-The Python code integrates with a MySQL database to store and
-retrieve student information and academic results.
-It establishes a connection to the database using the mysql.connector
-module and utilizes cursor objects to execute SQL queries.
+It allows users to perform various operations such as:
 
-6. Error Handling
-The Python code includes error-handling mechanisms to manage
-exceptions that may occur during database operations.
-It catches MySQL errors and provides appropriate error messages to the user.
+- Adding students  
+- Recording academic results  
+- Displaying the course catalog  
+- Searching and updating student records  
 
-7. Modules Used
-7.1 mysql.connector: This module is used to connect Python programs with MySQL databases.
-  It provides an interface for working with MySQL databases by executing SQL queries, fetching data,
-  and managing database connections.
+The system interacts with a **MySQL database** to store and retrieve all data efficiently.
 
-7.2 tabulate: The tabulate module is used to format tabular data in a visually appealing way. 
-  It simplifies the process of displaying data in tabular format by providing functions to 
-  create tables with headers and align data neatly.
+---
 
-# MySQL Query Documentation 📄
-1. Overview
-The MySQL queries file contains SQL statements to create tables for storing student
-data, populate the tables with sample data and perform various database operations.
+## 📄 Python Code Documentation
 
-2. Table Creation
-2.1 Course Table: Stores information about different courses offered.
-2.2 Student Table: Stores details of students enrolled in courses.
-2.3 Result Table: Records academic results of students for different courses.
+### 1️⃣ Overview
 
-3. Data Population
-The MySQL queries file inserts sample data into the course table to populate
-it with information about different courses.
+The Python code consists of multiple functions that handle the core functionalities of the Student Management System.
 
-4. Queries
-4.1 Select Queries: Retrieve information from the database, including the course catalog,
-student details, and academic results.
-4.2 Insert Queries: Add new records to the student and results from tables to store
-student information and academic results.
-4.3 Update Queries: Update existing records in the student table to modify
-student information.
-4.4 Delete Queries: Remove records from the student table based on the PRN of
-the student.
+It provides a **menu-driven interface** for user interaction and supports:
 
-5. Constraints
-The MySQL queries define foreign key constraints between the student and course tables
-to enforce referential integrity. These constraints ensure that only valid course IDs
-are assigned to students.
+- Student registration  
+- Result management  
+- Course-wise student display  
+- Record updates and deletions  
+
+---
+
+### 2️⃣ Functions
+
+> **Note:** `PRN` stands for **Permanent Registration Number**
+
+#### 2.1 Core Functions
+
+- `display_courses(cursor)`  
+- `add_student(cursor)`  
+- `add_result(cursor)`  
+- `display_results_by_prn(cursor, prn)`  
+- `search_student_by_prn(cursor, prn)`  
+- `display_students_by_course(cursor, course_id)`  
+- `delete_student_by_prn(cursor, prn)`  
+- `update_student_info(cursor)`  
+- `display_all_students(cursor)`  
+- `delete_all_students(cursor)`
+
+---
+
+### 4️⃣ Menu Function
+
+The `menu()` function provides a **menu-driven interface** that allows users to interact with the system.
+
+It presents various options such as:
+
+- Adding or deleting students  
+- Viewing results  
+- Searching records  
+- Updating student information  
+
+---
+
+### 5️⃣ Integration with MySQL
+
+The application integrates with a **MySQL database** using the `mysql.connector` module.
+
+It:
+- Establishes database connections  
+- Uses cursor objects to execute SQL queries  
+- Fetches and manipulates student and result data  
+
+---
+
+### 6️⃣ Error Handling
+
+The Python code includes **robust error-handling mechanisms** to manage exceptions that may occur during database operations.
+
+- Catches MySQL-related errors  
+- Displays meaningful error messages to the user  
+
+---
+
+### 7️⃣ Modules Used
+
+#### 7.1 `mysql.connector`
+
+- Connects Python programs with MySQL databases  
+- Executes SQL queries  
+- Manages database connections and transactions  
+
+#### 7.2 `tabulate`
+
+- Formats tabular data in a visually appealing way  
+- Helps display query results neatly with headers and alignment  
+
+---
+
+## 🗄️ MySQL Query Documentation
+
+### 1️⃣ Overview
+
+The MySQL queries file contains SQL statements used to:
+
+- Create database tables  
+- Insert sample data  
+- Perform CRUD (Create, Read, Update, Delete) operations  
+
+---
+
+### 2️⃣ Table Creation
+
+- **Course Table**  
+  Stores information about different courses offered  
+
+- **Student Table**  
+  Stores student details and enrolled course information  
+
+- **Result Table**  
+  Records academic results of students  
+
+---
+
+### 3️⃣ Data Population
+
+The queries insert **sample data** into the Course table to populate it with predefined course information.
+
+---
+
+### 4️⃣ Queries
+
+#### 4.1 Select Queries
+- Retrieve course catalogs  
+- Fetch student details  
+- Display academic results  
+
+#### 4.2 Insert Queries
+- Add new students  
+- Insert academic results  
+
+#### 4.3 Update Queries
+- Modify existing student records  
+
+#### 4.4 Delete Queries
+- Remove student records using PRN  
+
+---
+
+### 5️⃣ Constraints
+
+The MySQL queries define **foreign key constraints** between the Student and Course tables to ensure **referential integrity**.
+
+These constraints ensure:
+- Only valid course IDs can be assigned to students  
+- Data consistency across tables  
